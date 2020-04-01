@@ -1,3 +1,5 @@
+require 'date'
+
 def return_10
     return 10
 end
@@ -24,4 +26,16 @@ end
 
 def join_string(first_string, second_string)
     return "#{first_string}#{second_string}"
+end
+
+def add_string_as_number (first_string, second_string)
+    return first_string.to_i + second_string.to_i
+end
+
+def number_to_full_month_name (month_number)
+    return Date::MONTHNAMES[month_number]
+end
+
+def number_to_short_month_name (month_number)
+    return Date::ABBR_MONTHNAMES[month_number]
 end
