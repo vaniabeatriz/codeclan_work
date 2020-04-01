@@ -39,3 +39,18 @@ end
 def number_to_short_month_name (month_number)
     return Date::ABBR_MONTHNAMES[month_number]
 end
+
+def  volume_of_cube(length_of_side)
+    volume = length_of_side ** 3
+    return volume
+end
+
+def volume_of_sphere(radius)
+    volume = (4.0 / 3.0) * Math::PI * (radius ** 3)
+    return volume.round(2)
+end
+
+def fahrenheit_to_celsius(fahrenheit)
+    celsius = (fahrenheit - 32) * (5.0/9.0)
+    return celsius.round(2)
+end
