@@ -64,3 +64,20 @@ users = {
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
 # 10. Add another person to the users hash
+
+
+p users["Jonathan"][:twitter]
+
+p users["Erik"][:home_town]
+
+p users["Erik"][:lottery_numbers]
+
+p users["Avril"][:pets][0][:species]
+
+p users["Erik"][:lottery_numbers].min
+
+p users["Avril"][:lottery_numbers].select(&:even?)
+
+for number in users["Avril"][:lottery_numbers]
+  p number if number.even?
+end
