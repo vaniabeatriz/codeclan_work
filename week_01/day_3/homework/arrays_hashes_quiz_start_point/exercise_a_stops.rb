@@ -35,3 +35,19 @@ p stops.count
 p stops[3]
 
 p stops.fetch(3)
+
+
+stops = stops.reverse
+p stops
+
+for stop in stops
+    p stop
+end
+
+# Outra forma de fazer Loop:
+
+#stops.each { |stop| p stop }
+
+# Outra forma de reverter e atualizar a variável
+
+# stops.reverse!
